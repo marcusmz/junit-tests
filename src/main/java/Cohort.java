@@ -12,6 +12,8 @@ public class Cohort {
     public double getCohortAverage() {
         double avg = 0;
         for (Student student: this.getStudents()) {
+
+            System.out.println("student.getGradeAverage() = " + student.getGradeAverage());
             avg += student.getGradeAverage();
         }
         return avg / this.getStudents().size();
